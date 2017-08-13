@@ -71,7 +71,7 @@ namespace TesteImposto
                             NomeProduto = row["Nome do produto"].ToString(),
                             ValorItemPedido = Convert.ToDecimal(row["Valor"].ToString())
                         });
-                }
+                } 
 
                 service.GerarNotaFiscal(pedido);
                 MessageBox.Show("Operação efetuada com sucesso");
